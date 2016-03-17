@@ -8,6 +8,8 @@
 # AppIntro
 AppIntro is an Android Library that helps you make a **cool intro** for your app, like the ones in Google apps.
 
+AppIntro-Xamarin contains very minor fixes to enable building Xamarin Android binding library painlessly. Please don't complain to the original creator about this, write to <a href="mailto:soporte@birdie.cl">soporte@birdie.cl</a> instead.
+
 *Watch YouTube video [here](https://www.youtube.com/watch?v=OlAugnH3jFY&feature=youtu.be).*
 
 <img src="https://github.com/PaoloRotolo/AppIntro/blob/master/art/intro.png" width="300">

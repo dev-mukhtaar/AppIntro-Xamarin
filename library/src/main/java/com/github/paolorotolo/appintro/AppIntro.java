@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -33,7 +34,7 @@ public abstract class AppIntro extends AppCompatActivity {
     private static final int DEFAULT_SCROLL_DURATION_FACTOR = 1;
 
     protected PagerAdapter mPagerAdapter;
-    protected AppIntroViewPager pager;
+    private AppIntroViewPager pager;
     protected List<Fragment> fragments = new Vector<>();
     protected List<ImageView> dots;
     protected int slidesNumber;
@@ -43,7 +44,7 @@ public abstract class AppIntro extends AppCompatActivity {
     protected int vibrateIntensity = 20;
     protected boolean skipButtonEnabled = true;
     protected boolean baseProgressButtonEnabled = true;
-    protected boolean progressButtonEnabled = true;
+    private boolean progressButtonEnabled = true;
     protected int selectedIndicatorColor = DEFAULT_COLOR;
     protected int unselectedIndicatorColor = DEFAULT_COLOR;
     protected View skipButton;

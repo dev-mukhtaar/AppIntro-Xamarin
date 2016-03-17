@@ -29,7 +29,7 @@ public abstract class AppIntro2 extends AppCompatActivity {
     private boolean STATUS_BAR_VISIBLE = false;
 
     protected PagerAdapter mPagerAdapter;
-    protected AppIntroViewPager pager;
+    private AppIntroViewPager pager;
     protected List<Fragment> fragments = new Vector<>();
     protected List<ImageView> dots;
     protected int slidesNumber;
@@ -38,7 +38,7 @@ public abstract class AppIntro2 extends AppCompatActivity {
     protected boolean isVibrateOn = false;
     protected int vibrateIntensity = 20;
     protected boolean baseProgressButtonEnabled = true;
-    protected boolean progressButtonEnabled = true;
+    private boolean progressButtonEnabled = true;
     protected int selectedIndicatorColor = DEFAULT_COLOR;
     protected int unselectedIndicatorColor = DEFAULT_COLOR;
     protected View nextButton;
@@ -60,7 +60,7 @@ public abstract class AppIntro2 extends AppCompatActivity {
     }
 
     @Override
-    final protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.intro_layout2);
